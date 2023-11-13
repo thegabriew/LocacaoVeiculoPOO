@@ -9,12 +9,11 @@ public class Automovel {
 	double km; 
 	String renavam;
 	String chassi;
-	double valorLoc;
+	double valoroc;
+  Modelo mod = new Modelo();
+  Marca mar = new Marca();
+	
 
-	
-	Modelo modelo = new Modelo();
-	Marca marca = new Marca();
-	
 	public void cadastrar(String p, String c, int a, String comb, int portas,
 			double kilom, Modelo modelo, Marca marca, String cs, double loc){
 			
@@ -28,5 +27,20 @@ public class Automovel {
 			this.chassi = cs;
 			this.valorLoc = loc;
 	}
+
+  public void exibirCarro() {
+    System.out.println("Sobre o carro:" );
+    marc.exibirMarca();
+    mod.exibirModelo();    
+    System.out.println("\nPlaca: "+this.placa);
+    System.out.println("Cor: "+this.cor);
+    System.out.println("Ano: "+this.ano);
+    System.out.println("Tipo de combustivel: "+this.fuel);
+    System.out.println("Portas: "+this.portas);
+    System.out.println("Quilômetros: "+this.km);
+    System.out.println("Renavam: "+this.renavam);
+    System.out.println("Chassi: "+this.chassi);
+    System.out.println("Valor de Locação: "+this.valoroc);
+  }
 	
 }
