@@ -15,7 +15,7 @@ public class Locacao {
 		System.out.println("Ano: " + this.c.ano);
 		System.out.println("Cliente: " + this.cliente.nome);
 		System.out.println("Data de Locação: " + this.dataLoc.toString());
-		System.out.println("Data de Devoluçõ: " + this.dataDev.toString());
+		System.out.println("Data de Devolução: " + this.dataDev.toString());
 		System.out.println("Valor a ser pago: " + this.valor);
 	}
 }
