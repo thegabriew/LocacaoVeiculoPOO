@@ -6,7 +6,17 @@ public class Locacao {
 	LocalDateTime dataDev;
 	double valor;
 	Cliente cliente;
-	
+
+public void cadastrarLocacao(Automovel c, LocalDateTime dataLoc, LocalDateTime dataDev, double valor, Cliente cliente) {
+
+	this.c = c;
+	this.dataLoc = dataLoc;
+	this.dataDev = dataDev;
+	this.valor = valor;
+	this.cliente = cliente;
+  
+}
+  
 	public void imprimirLocacao(){
 		System.out.println("*** LOCACÇÃO ***");
 		System.out.println("Modelo: " + this.c.modelo);
