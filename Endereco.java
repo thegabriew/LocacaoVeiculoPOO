@@ -13,4 +13,13 @@ public class Endereco {
     this.cidade = cid;
 
   }
+
+  public void exibirEnd(){
+
+    System.out.println("Cidade: " + this.cidade);
+    System.out.println("Rua: " +this.rua);
+    System.out.println("Número: "+this.numero);
+    System.out.println("Bairro: "+this.bairro);
+    
+  }
 }
